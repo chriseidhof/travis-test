@@ -1,4 +1,5 @@
 language: objective-c
 xcode_workspace: TravisTest.xcworkspace
-script:
-- xcodebuild -workspace TravisTest.xcworkspace -sdk macosx -scheme 'TravisTest' -configuration Release archive -archivePath build/TravisTest.xcarchive  # | egrep -A 5 "(error|warning):"
+xcode_scheme: TravisTestTests
+# script:
+# - xcodebuild -workspace TravisTest.xcworkspace -sdk macosx -scheme 'TravisTest' -configuration Release archive -archivePath build/TravisTest.xcarchive  # | egrep -A 5 "(error|warning):"
